@@ -1,6 +1,8 @@
 # How to train Neural Networks effectively
 ## Sander Dieleman
 
+**2023 Mediterranean Machine Learning Summer School**
+
 [Link to the talk](https://www.youtube.com/watch?v=wO4quYlQUyE)
 
 ---
