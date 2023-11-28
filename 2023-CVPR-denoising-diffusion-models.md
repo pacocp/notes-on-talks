@@ -13,7 +13,7 @@
 - We don't have access to the PDF of the real distribution, thus we don't have access to the intermediate distribution either
 - We can go back at the end of the forward process and sample from the denoising distribution.
 - We can approximate it using a normal distribution if $\beta_t$ is small in each diffusion step.
-- We have $p(x_T) = N(X_T;0,I)$. And by using the parameters $\theta$ we can approximate it using a trainable network $p_{\theta}(X_{t-1}|x_t) = \math{N}(x_{t-1}; \mu_{\theta}(x_t,t), \alpha_{t}{^2} I)$
+- We have $p(x_T) = N(X_T;0,I)$. And by using the parameters $\theta$ we can approximate it using a trainable network $p_{\theta}(X_{t-1}|x_t) = N(x_{t-1}; \mu_{\theta}(x_t,t), \alpha_{t}{^2} I)$
 - This will predict the average version of that noisy image.
 - We can use it to define the joint distrubtion of all trajectories: $p_{\theta}(x_{0:T}) = p(x_T) \prod_{t=1}^{T} p_\theta(x_{t-1}|x_{t})$
 - This is the product of the conditionals
